@@ -2,14 +2,11 @@ import { useNavigate } from "react-router-dom";
 import { GraduationCap, Users, BookOpen } from "lucide-react";
 import { RoleCard } from "@/components/RoleCard";
 import { Button } from "@/components/ui/button";
-
 const Index = () => {
   const navigate = useNavigate();
-
-  return (
-    <div className="min-h-screen bg-background flex flex-col">
+  return <div className="min-h-screen bg-background flex flex-col">
       {/* Hero Section */}
-      <div className="flex-1 flex flex-col items-center justify-center px-6 py-12">
+      <div className="flex-1 px-6 py-12 items-center justify-start flex flex-col">
         {/* Logo & Branding */}
         <div className="text-center mb-10 animate-fade-in">
           <div className="w-24 h-24 mx-auto mb-4 rounded-3xl bg-primary/10 flex items-center justify-center">
@@ -29,28 +26,16 @@ const Index = () => {
             I am a...
           </p>
           
-          <RoleCard
-            icon={Users}
-            title="Parent / Student"
-            description="Find and book tutors near you"
-            onClick={() => navigate("/parent/login")}
-          />
+          <RoleCard icon={Users} title="Parent / Student" description="Find and book tutors near you" onClick={() => navigate("/parent/login")} />
           
-          <RoleCard
-            icon={GraduationCap}
-            title="Tutor"
-            description="Teach students and earn money"
-            onClick={() => navigate("/tutor/login")}
-          />
+          <RoleCard icon={GraduationCap} title="Tutor" description="Teach students and earn money" onClick={() => navigate("/tutor/login")} />
         </div>
 
         {/* Admin Link */}
-        <div className="mt-8 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-          <Button
-            variant="ghost"
-            className="text-muted-foreground text-sm"
-            onClick={() => navigate("/admin/login")}
-          >
+        <div className="mt-8 animate-fade-in" style={{
+        animationDelay: "0.3s"
+      }}>
+          <Button variant="ghost" className="text-muted-foreground text-sm" onClick={() => navigate("/admin/login")}>
             Admin Login
           </Button>
         </div>
@@ -62,8 +47,6 @@ const Index = () => {
           Safe & Trusted Home Tutoring
         </p>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
