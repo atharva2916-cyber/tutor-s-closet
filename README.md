@@ -10,6 +10,7 @@ Students or parents can search for suitable tutors.
 Tutors can register and showcase their skills.
 Students can select tutors based on their requirements.
 Both students and tutors can manage their learning and teaching schedules.
+
 💡 Solution
 Tutor's Closet provides a centralized platform with separate portals for Students/Parents and Tutors.
 The platform allows users to:
@@ -19,6 +20,7 @@ Request or book tutoring sessions.
 Manage tutoring schedules.
 Provide personalized and flexible learning opportunities.
 Help tutors find teaching opportunities.
+
 ✨ Features
 👨‍🎓 Student/Parent Portal
 Student registration and login
@@ -28,6 +30,7 @@ Select subjects and learning requirements
 Request tutoring sessions
 Manage bookings and schedules
 View tutor information
+
 👩‍🏫 Tutor Portal
 Tutor registration and login
 Create and manage tutor profiles
